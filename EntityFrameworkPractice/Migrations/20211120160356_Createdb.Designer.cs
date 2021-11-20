@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EntityFrameworkPractice.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20211120152905_Createdb")]
+    [Migration("20211120160356_Createdb")]
     partial class Createdb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -46,6 +46,9 @@ namespace EntityFrameworkPractice.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(50)")
                         .HasMaxLength(50);
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
 
                     b.HasKey("Id");
 

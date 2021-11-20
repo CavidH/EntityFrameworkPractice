@@ -45,6 +45,9 @@ namespace EntityFrameworkPractice.Migrations
                         .HasColumnType("nvarchar(50)")
                         .HasMaxLength(50);
 
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
+
                     b.HasKey("Id");
 
                     b.ToTable("Products");
