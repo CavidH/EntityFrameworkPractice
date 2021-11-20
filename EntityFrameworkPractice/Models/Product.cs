@@ -20,7 +20,7 @@ namespace EntityFrameworkPractice.Models
         [MaxLength(50)]
         [Required]// yəniki NOT NULL 
         public string Name { get; set; }
-        decimal Price { get; set; } 
+        decimal Price  { get; set; } 
         
         
     }
